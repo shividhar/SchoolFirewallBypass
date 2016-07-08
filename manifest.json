@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "School Filter Bypass",
+  "description": "This extension allows user to bypass the school's filter. Works most of the time.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts" : [{
+    "matches" : ["<all_urls>"],
+    "js" : ["script.js"]
+  }],
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
